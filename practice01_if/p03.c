@@ -1,17 +1,16 @@
 #include <stdlib.h>
 #include <stdio.h>
-/*
-	ç°¡æ˜“å› æ•¸æª¢æŸ¥ï¼š 
-	è¼¸å…¥ä¸€æ­£æ•´æ•¸ï¼Œä¸¦æª¢æŸ¥ 2,3,5,7 æ˜¯å¦ç‚ºå…¶å› æ•¸ï¼Œçµæœé¡¯ç¤ºæ–¼è¢å¹•ä¸Š
-*/
+
 int main(int argc,char *argv[]){
 	int input = 0;
-	printf("è«‹è¼¸å…¥ä¸€å€‹æ•´æ•¸ï¼š");
+	printf("½Ğ¿é¤J¤@­Ó¾ã¼Æ¡G");
 	scanf("%d",&input);
 	
-	printf("%d %sæ˜¯ 2 çš„å€æ•¸\n",input,(input%2)?"ä¸":"");
-	printf("%d %sæ˜¯ 3 çš„å€æ•¸\n",input,(input%3)?"ä¸":"");
-	printf("%d %sæ˜¯ 5 çš„å€æ•¸\n",input,(input%5)?"ä¸":"");
-	printf("%d %sæ˜¯ 7 çš„å€æ•¸\n",input,(input%7)?"ä¸":"");
+	printf("%d %s¬O 2 ªº­¿¼Æ\n",input,(input%2)?"¤£":"");
+	printf("%d %s¬O 3 ªº­¿¼Æ\n",input,(input%3)?"¤£":"");
+	printf("%d %s¬O 5 ªº­¿¼Æ\n",input,(input%5)?"¤£":"");
+	printf("%d %s¬O 7 ªº­¿¼Æ\n",input,(input%7)?"¤£":"");
+	
+	
 	return 0;
 }
