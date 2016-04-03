@@ -219,4 +219,8 @@ pip-log.txt
 ##Dev C++
 #############
 *.o
+<<<<<<< HEAD
 *.exe
+=======
+*.exe
+>>>>>>> origin/master
