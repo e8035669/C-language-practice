@@ -1,16 +1,16 @@
 #include<stdio.h>
 /*
-	å› æ•¸æª¢æŸ¥ï¼š
-	è¼¸å…¥ä¸€æ­£æ•´æ•¸ï¼Œä¸¦æ‰¾å‡ºå…¶æ‰€æœ‰çš„å› æ•¸
+	¦]¼ÆÀË¬d¡G
+	¿é¤J¤@¥¿¾ã¼Æ¡A¨Ã§ä¥X¨ä©Ò¦³ªº¦]¼Æ
 */
 int main(int argc,char *argv[]){
 	
 	long long n = 0;
-	printf("è¼¸å…¥ä¸€å€‹æ•¸å­— æ‰¾å‡ºå…¶å› æ•¸ï¼š");
+	printf("¿é¤J¤@­Ó¼Æ¦r §ä¥X¨ä¦]¼Æ¡G");
 	scanf("%d",&n);
 	long long count = 1;
 	
-	printf("%lld çš„å› æ•¸æœ‰ï¼š",n);
+	printf("%lld ªº¦]¼Æ¦³¡G",n);
 	while(count <= n){
 		if(!(n%count)){
 			printf("%lld ",count);

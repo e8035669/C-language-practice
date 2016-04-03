@@ -1,24 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*
-	ç¸½å’Œè¨ˆç®—ï¼š
-	è¼¸å…¥ä¸€æ­£æ•´æ•¸Nï¼Œä¸¦é¡¯ç¤º1+2+....+N ç¸½å’Œã€‚(å¦‚ï¼šè¼¸å…¥9ï¼Œçµæœï¼š1+2+3+4+5+6+7+8+9=)
-*/
 
-int main(int argc,char *argv[]){
-	int n = 0;
-	printf("è¼¸å…¥ä¸€å€‹æ­£æ•´æ•¸ï¼š");
-	scanf("%d",&n);
-	
-	int count = 1;
-	int ans = 0;
-	while(count!=n){
-		ans += count;
-		printf("%d+",count);
-		count++;
-	}
-	ans+=n;
-	printf("%d=%d\n",n,ans);
-	
-	return 0;
+/*
+        Á`©M­pºâ¡G
+        ¿é¤J¤@¥¿¾ã¼ÆN¡A¨ÃÅã¥Ü1+2+....+N Á`©M¡C(¦p¡G¿é¤J9¡Aµ²ªG¡G1+2+3+4+5+6+7+8+9=)
+ */
+
+int main(int argc, char *argv[]) {
+    int n = 0;
+    printf("¿é¤J¤@­Ó¥¿¾ã¼Æ¡G");
+    scanf("%d", &n);
+
+    int count = 1;
+    int ans = 0;
+    while (count != n) {
+        ans += count;
+        printf("%d+", count);
+        count++;
+    }
+    ans += n;
+    printf("%d=%d\n", n, ans);
+
+    return 0;
 }

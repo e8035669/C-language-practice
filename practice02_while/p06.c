@@ -1,17 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 /*
-	è³ªæ•¸æª¢æŸ¥ï¼š
-	å¾ž1~10000ä¹‹å‰æ‰¾å‡ºå‰30å€‹è³ªæ•¸ã€‚
+	½è¼ÆÀË¬d¡G
+	±q1~10000¤§«e§ä¥X«e30­Ó½è¼Æ¡C
 */
 
 int main(int argc,char *argv[]){
 	int *data = (int*)calloc(10001,sizeof(int));
 	int i ,j;
-	//0 --> è³ªæ•¸  1--> åˆæ•¸
+	//0 --> ½è¼Æ  1--> ¦X¼Æ
 	for(i = 2;i<10000;i++)if(!data[i])for(j=i+i;j<10000;j+=i)data[j]=1;
 	
-	printf("é¡¯ç¤º1~10000å‰30å€‹è³ªæ•¸ï¼š\n");
+	printf("Åã¥Ü1~10000«e30­Ó½è¼Æ¡G\n");
 	i = 2;
 	int count = 0;
 	while(i<10000&&count<30){

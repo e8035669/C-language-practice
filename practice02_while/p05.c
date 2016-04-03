@@ -1,27 +1,32 @@
 #include <stdio.h>
+
 /*
-	å› æ•¸æª¢æŸ¥ï¼š
-	è¼¸å…¥å…©å€‹æ­£æ•´æ•¸ Aã€Bï¼Œä»£è¡¨ä½ è¦æ‰¾çš„æ•¸å­—ç¯„åœã€‚ è¼¸å‡º A~B ä¹‹é–“ä¸æ˜¯ 2ã€3ã€5 çš„å€æ•¸çš„æ•¸å­—æœ‰å¹¾å€‹ã€‚
-*/
-int main(int argc,char *argv[]){
-	
-	int A = 0,B = 0;
-	printf("å› æ•¸æª¢æŸ¥\nè¼¸å…¥å…©å€‹æ­£æ•´æ•¸A Bï¼š");
-	scanf("%d%d",&A,&B);
-	
-	int count = 0;
-	printf("%d åˆ° %d ä¹‹é–“ ä¸æ˜¯2 3 5çš„å€æ•¸æœ‰ï¼š",A,B);
-	if(A>B){int tmp = A;A=B;B=tmp;}
-	
-	while(A<=B){
-		if((A%2)&&(A%3)&&(A%5)){
-			printf("%d ",A);
-			count++;
-		}
-		A++; 
-	}
-	printf("\nå…±%då€‹\n",count);
-	
-	
-	return 0;
+        ¦]¼ÆÀË¬d¡G
+        ¿é¤J¨â­Ó¥¿¾ã¼Æ A¡BB¡A¥Nªí§A­n§äªº¼Æ¦r½d³ò¡C ¿é¥X A~B ¤§¶¡¤£¬O 2¡B3¡B5 ªº­¿¼Æªº¼Æ¦r¦³´X­Ó¡C
+ */
+int main(int argc, char *argv[]) {
+
+    int A = 0, B = 0;
+    printf("¦]¼ÆÀË¬d\n¿é¤J¨â­Ó¥¿¾ã¼ÆA B¡G");
+    scanf("%d%d", &A, &B);
+
+    int count = 0;
+    printf("%d ¨ì %d ¤§¶¡ ¤£¬O2 3 5ªº­¿¼Æ¦³¡G", A, B);
+    if (A > B) {
+        int tmp = A;
+        A = B;
+        B = tmp;
+    }
+
+    while (A <= B) {
+        if ((A % 2)&&(A % 3)&&(A % 5)) {
+            printf("%d ", A);
+            count++;
+        }
+        A++;
+    }
+    printf("\n¦@%d­Ó\n", count);
+
+
+    return 0;
 }

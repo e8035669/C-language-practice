@@ -1,19 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /*
-	æ‰“å­—ç·´ç¿’ï¼š
-	åˆ©ç”¨while loopé‡è¤‡è™•ç†ä¸€æ¬¡è¼¸å…¥ä¸€å€‹è‹±æ–‡å­—æ¯å­—å…ƒï¼Œä¸¦å°‡è©²å­—å…ƒä½œå¤§å°å¯«è½‰æ›ã€‚è‹¥è¼¸å…¥éè‹±æ–‡å­—æ¯å‰‡åœæ­¢ã€‚
-*/
-int main(int argc,char *argv[]){
-	
-	char input = 0;
-	
-	while(scanf("%c",&input){
-	if(input>='a'&&input<='z'){
-		printf("%c\n",input-32);
-	}else if(input>='A'&&input<='Z'){
-		printf("%c\n",input+32);	
-	}else break;
-	
-	return 0;
+        ¥´¦r½m²ß¡G
+        §Q¥Îwhile loop­«½Æ³B²z¤@¦¸¿é¤J¤@­Ó­^¤å¦r¥À¦r¤¸¡A¨Ã±N¸Ó¦r¤¸§@¤j¤p¼gÂà´«¡C­Y¿é¤J«D­^¤å¦r¥À«h°±¤î¡C
+ */
+int main(int argc, char *argv[]) {
+
+    char input = 0;
+
+    while (scanf("%c", &input) {
+            if (input >= 'a' && input <= 'z') {
+                printf("%c\n", input - 32);
+            } else if (input >= 'A' && input <= 'Z') {
+                printf("%c\n", input + 32);
+            } else {
+                break;
+            }
+    }
+    return 0;
 }
