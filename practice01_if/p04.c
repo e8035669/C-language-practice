@@ -1,30 +1,31 @@
 #include <stdio.h>
+
 /*
-	ç°¡æ˜“çŒœæ•¸å­—éŠæˆ²ï¼š 
-	æ’°å¯«ä¸€çŒœæ•¸å­—éŠæˆ²ï¼Œ 
-	ç•¶çŒœçš„æ•¸å­—æ¯”ç›®æ¨™å¤§æ™‚é¡¯ç¤ºToo Big !! 
-	ç•¶çŒœçš„æ•¸å­—æ¯”ç›®æ¨™å°æ™‚é¡¯ç¤ºToo Small !! 
-	çŒœä¸­ç›®æ¨™é¡¯ç¤ºYou got it !!
-	ä¸¦çµæŸéŠæˆ²ã€‚
-*/
+        Â²©ö²q¼Æ¦r¹CÀ¸¡G 
+        ¼¶¼g¤@²q¼Æ¦r¹CÀ¸¡A 
+        ·í²qªº¼Æ¦r¤ñ¥Ø¼Ð¤j®ÉÅã¥ÜToo Big !! 
+        ·í²qªº¼Æ¦r¤ñ¥Ø¼Ð¤p®ÉÅã¥ÜToo Small !! 
+        ²q¤¤¥Ø¼ÐÅã¥ÜYou got it !!
+        ¨Ãµ²§ô¹CÀ¸¡C
+ */
 
 
-int main(int argc,char *argv[]){
-	int ans = 10;
-	int input = 0;
-	do{
-		printf("Â²qÂ¤@Â­Ã“Â¼Ã†Â¦rÂ¡G");
-		scanf("%d",&input);
-		
-		if(input>ans){
-			printf("Too Big !!\n"); 
-		}else if(input < ans){
-			printf("Too Small !!\n");
-		}else{
-			printf("You got it!!\n");
-		}
-		
-	}while(input!=ans);
-	
-	return 0;
+int main(int argc, char *argv[]) {
+    int ans = 10;
+    int input = 0;
+    do {
+        printf("?q?@?????r?G");
+        scanf("%d", &input);
+
+        if (input > ans) {
+            printf("Too Big !!\n");
+        } else if (input < ans) {
+            printf("Too Small !!\n");
+        } else {
+            printf("You got it!!\n");
+        }
+
+    } while (input != ans);
+
+    return 0;
 }
