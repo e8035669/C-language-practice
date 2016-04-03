@@ -2,27 +2,27 @@
 #include <stdlib.h>
 
 /*
-	BMI計算： 
-	請入身高、體重，計算BMI值。(BMI值計算公式: BMI = 體重(公斤) / 身高2) 
-	BMI值小於18.5 顯示體重過輕 
-	BMI值大於18.5 小於24 之間 顯示正常範圍 
-	BMI值大於等於24 顯示體重過胖
+	BMI�p��G 
+	�ФJ�����B�魫�A�p��BMI�ȡC(BMI�ȭp�⤽��: BMI = �魫(����) / ����2) 
+	BMI�Ȥp��18.5 ����魫�L�� 
+	BMI�Ȥj��18.5 �p��24 ���� ��ܥ��`�d�� 
+	BMI�Ȥj�󵥩�24 ����魫�L�D
 */
 int main(int argc, char *argv[]){
 	int height = 0,weight = 0;
-	printf("請輸入身高：");
+	printf("�п�J�����G");
 	scanf("%d",&height);
-	printf("請輸入體重：");
+	printf("�п�J�魫�G");
 	scanf("%d",&weight);
 	
 	double BMI = weight/((double)height*height/10000);
 	printf("BMI = %.2f",BMI);
 	if(BMI<18.5){
-		printf("體重過輕\n");
+		printf("�魫�L��\n");
 	} else if(BMI<24){
-		printf("正常範圍\n");
+		printf("���`�d��\n");
 	}else{
-		printf("體重過胖\n");
+		printf("�魫�L�D\n");
 	}
 	
 	

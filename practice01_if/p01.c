@@ -2,18 +2,18 @@
 #include <stdlib.h>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
-/*	èº«é«˜é«”é‡è¨ˆç®—ï¼š
-	è¼¸å…¥èº«é«˜ã€é«”é‡ 
-	èº«é«˜ä½æ–¼160ä¸”é«”é‡å¤§æ–¼80é¡¯ç¤º Too fat !! 
-	èº«é«˜é«˜æ–¼160ä¸”é«”é‡å°æ–¼80é¡¯ç¤º Too skinny !! 
-	å…¶é¤˜æƒ…æ³é¡¯ç¤º Standard~~
+/*	¨­°ªÅé­«­pºâ¡G
+	¿é¤J¨­°ª¡BÅé­« 
+	¨­°ª§C©ó160¥BÅé­«¤j©ó80Åã¥Ü Too fat !! 
+	¨­°ª°ª©ó160¥BÅé­«¤p©ó80Åã¥Ü Too skinny !! 
+	¨ä¾l±¡ªpÅã¥Ü Standard~~
 */
 
 int main(int argc, char *argv[]) {
 	int height = 0,weight = 0;
-	printf("è«‹è¼¸å…¥èº«é«˜ï¼š");
+	printf("½Ğ¿é¤J¨­°ª¡G");
 	scanf("%d",&height);
-	printf("è«‹è¼¸å…¥é«”é‡ï¼š");
+	printf("½Ğ¿é¤JÅé­«¡G");
 	scanf("%d",&weight);
 	
 	if(height<160&&weight>80){
