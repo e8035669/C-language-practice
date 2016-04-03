@@ -9,14 +9,15 @@ int main(int argc, char *argv[]) {
 
     char input = 0;
 
-    while (scanf("%c", &input) {
-            if (input >= 'a' && input <= 'z') {
-                printf("%c\n", input - 32);
-            } else if (input >= 'A' && input <= 'Z') {
-                printf("%c\n", input + 32);
-            } else {
-                break;
-            }
+    while (1) {
+        scanf("%c", &input);
+        if (input >= 'a' && input <= 'z') {
+            printf("%c\n", input - 32);
+        } else if (input >= 'A' && input <= 'Z') {
+            printf("%c\n", input + 32);
+        } else {
+            break;
+        }
     }
     return 0;
 }
