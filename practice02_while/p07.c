@@ -11,6 +11,7 @@ int main(int argc, char *argv[]) {
 
     while (1) {
         scanf("%c", &input);
+
         if (input >= 'a' && input <= 'z') {
             printf("%c\n", input - 32);
         } else if (input >= 'A' && input <= 'Z') {
@@ -18,6 +19,9 @@ int main(int argc, char *argv[]) {
         } else {
             break;
         }
+
+        fflush(stdin);
+
     }
     return 0;
 }
