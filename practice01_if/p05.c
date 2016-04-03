@@ -1,26 +1,34 @@
 #include <stdio.h>
+/*
+	æˆç¸¾ç­‰ç¬¬ï¼š 
+	ä½¿ç”¨äº”åˆ†æ³•å°‡æ»¿åˆ†ç‚º100åˆ†çš„åˆ†æ•¸è½‰æ›æˆABCDEäº”ç­‰åœ°ï¼Œå…¶ä¸­
+	A: 90~100; 
+	B: 80~89; 
+	C: 70~79; 
+	D: 60~69; 
+	E:0~59 
+*/
+
+
 int main(int argc,char *argv[]){
 	
 	int score;
-	printf("¿é¤J¤À¼Æ0~100¤À¡G");
+	printf("è¼¸å…¥åˆ†æ•¸0~100åˆ†ï¼š");
 	scanf("%d",&score);
 	
 	if(score>=0&&score<60){
-		printf("%d ¤À¬O E µ¥\n",score);
+		printf("%d åˆ†æ˜¯ E ç­‰\n",score);
 	}else if(score<70){
-		printf("%d ¤À¬O D µ¥\n",score);
+		printf("%d åˆ†æ˜¯ D ç­‰\n",score);
 	}else if(score<80){
-		printf("%d ¤À¬O C µ¥\n",score);
+		printf("%d åˆ†æ˜¯ C ç­‰\n",score);
 	}else if(score<90){
-		printf("%d ¤À¬O B µ¥\n",score);
+		printf("%d åˆ†æ˜¯ B ç­‰\n",score);
 	}else if(score<=100){
-		printf("%d ¤À¬O A µ¥\n",score);
+		printf("%d åˆ†æ˜¯ A ç­‰\n",score);
 	}else{
 		printf("invalid score.\n");
 	}
-	
-	
-	
 	
 	return 0;
 } 
