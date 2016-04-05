@@ -7,7 +7,7 @@
 	計算並輸出 全部輸入數字的總和和平均。
 */
 
-int main(int argc,int *argv[]){
+int main(int argc,char *argv[]){
 	
 	char input[12];
 	int valid = 0;
