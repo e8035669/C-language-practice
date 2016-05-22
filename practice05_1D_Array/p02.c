@@ -26,29 +26,37 @@ void setDec2Float(int floatNum[],int decimal){
 
 	*/
 
-	floatNum[0] = (decimal<0);
-	decimal *= -floatNum[0];
+	if(decimal<0){
+		floatNum[0] = 1;
+		decimal = decimal*-1;
+	}else{
+		floatNum[0] = 0;
+	}
 
+	unsigned int num = decimal;
 	unsigned int mask = 1<<31;
 	int index = 0;
-	while((mask&decimal)>0){
+	while(index<32 && !(mask&num)){
 		mask>>=1;
 		index++;
 	}
-	printf("step1:\n");
 
 	unsigned char exp = 127;
-	int* point = &(floatNum[9]);
-	for(index++;index<32;point++,index++){
-		(*point) = (((mask&decimal)>0)?1:0);
+	int floatIndex = 9;
+	index++;
+	mask>>=1;
+	while(index<32){
+		floatNum[floatIndex] = (mask&num)?1:0;
 		exp++;
+		index++;
+		floatIndex++;
+		mask>>=1;
 	}
-	printf("step2:\n");
 
+	int i,j;
 	unsigned char chMask = 1<<7;
-	for(point = &(floatNum[1]);point<(&floatNum[9])&&chMask>0;point++,chMask>>=1){
-		(*point) = (((chMask&exp)>0)?1:0);
+	for(i=1,j=0;i<9&&j<8;i++,j++){
+		floatNum[i] = (chMask&exp)?1:0;
+		chMask>>=1;
 	}
-	printf("step3:\n");
-
 }
